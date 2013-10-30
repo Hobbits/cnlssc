@@ -113,10 +113,10 @@ $(document).ready(function(){
 })
 
 document.addEventListener("deviceready", function(){
-    document.addEventListener("backbutton", function(e){
-        e.preventDefault();
-        return false;
-    }, false);
+//    document.addEventListener("backbutton", function(e){
+//        e.preventDefault();
+//        return false;
+//    }, false);
 
     document.addEventListener("menubutton", function(e){
 //        e.preventDefault();
