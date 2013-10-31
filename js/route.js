@@ -11,12 +11,12 @@ app.config(function($locationProvider,$httpProvider,$compileProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
 });
 
-//var transOrganizer=function(trans){
-//    if(isAndroid){
-//        trans="none";
-//    }
-//    return trans;
-//}
+var transOrganizer=function(trans){
+    if(isAndroid){
+        trans="none";
+    }
+    return trans;
+}
 
 app.config(function($routeProvider) {
     $routeProvider.
