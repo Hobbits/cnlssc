@@ -86,7 +86,7 @@ app.factory('logout', function(userInfo,$http,localStorageService,$waitDialog){
         }catch(e){}
         userInfo.delete();
         localStorageService.remove('shop_info');
-        $http.jsonp(appConfig.logoutURL);
+        $http.jsonp(appConfig.logoutURL + '&callback=JSON_CALLBACK');
         if(angular.isDefined(path) && path.length>0){
             setTimeout(function(){
                 window.location.replace("#!"+path);
