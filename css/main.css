@@ -21,7 +21,7 @@
     position: absolute;padding:0;top:0;bottom: 0;left: 0;right: 0;
     overflow-y:hidden;
     height: 100%;
-    margin-bottom:3.6em;
+    margin-bottom: 3.6em;
 }
 #navigator {height:50%;min-height: 210px;}
 #navigator .ui-block-a,
