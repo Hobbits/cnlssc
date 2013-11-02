@@ -20,6 +20,8 @@
 #pagemain #mainContent{
     position: absolute;padding:0;top:0;bottom: 0;left: 0;right: 0;
     overflow-y:hidden;
+    height: 100%;
+    margin-bottom:3.6em;
 }
 #navigator {height:50%;min-height: 210px;}
 #navigator .ui-block-a,
@@ -28,7 +30,7 @@
 #navigator .ui-block-d {
     height:50%; text-align:center;
 }
-#navigator a { display:inline-block;  text-decoration:none;height: 80%; width: 100%}
+#navigator a { display:inline-block;  text-decoration:none;height: 80%; width: 100%;}
 #navigator a img {max-width:97%; max-height:100%;}
 #navigator a h3 {font-size:90%; color:#64605D;height: 20%; text-align:center; white-space:nowrap;}
 

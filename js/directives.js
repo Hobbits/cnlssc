@@ -15,7 +15,7 @@ app.directive("appfooter", function($route) {
     return {
         restrict: "E",
         replace: true,
-        template: '<div data-id="appfooter" data-role="footer" data-position="fixed" data-tap-toggle="false" style="height: height: 3.6em;">'+
+        template: '<div data-id="appfooter" data-role="footer" data-position="fixed" data-tap-toggle="false">'+
             '<div data-role="navbar" data-iconpos="bottom">'+
             '<ul class="footerul">'+
             '<li><a href="#!/" data-icon="home" data-theme="a" class="nav nav1">首页</a></li>'+
