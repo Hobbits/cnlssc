@@ -43,7 +43,11 @@ app.controller("myqrCtrl", function ($scope,textStatus,myshopInfo,AJAX,$location
             content:myshopInfo.get("shop_intro"),
             ralateUid:appConfig.api.sinaRalateUid||''
         }
-
+        if($scope.shareObj.pics && $scope.shareObj.pics.length > 0) {
+            //
+        } else {
+            $scope.shareObj.pics = null;
+        }
         window.plugins.socialsharing.share($scope.shareObj.title, null,  $scope.shareObj.pics[0],  $scope.shareObj.sUrl);
 
     }
