@@ -236,7 +236,7 @@ app.controller("gooddetailCtrl", function ($scope,$routeParams,$window,AJAX,user
         if($scope.shareObj.pics && $scope.shareObj.pics.length > 0) {
             //
         } else {
-            $scope.shareObj.pics = null;
+            $scope.shareObj.pics[0] = null;
         }
         window.plugins.socialsharing.share($scope.shareObj.content,$scope.shareObj.title,$scope.shareObj.pics[0],  $scope.shareObj.sUrl);
     }

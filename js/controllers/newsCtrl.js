@@ -72,12 +72,13 @@ $scope.showNewslist = function(){
             content:targetObj.find('.articleText').text(),
             ralateUid:appConfig.api.sinaRalateUid||''
         }
+
         if($scope.shareObj.pics && $scope.shareObj.pics.length > 0) {
             //
         } else {
-            $scope.shareObj.pics = null;
+            $scope.shareObj.pics[0] = null;
         }
-        window.plugins.socialsharing.share($scope.shareObj.content,$scope.shareObj.title,$scope.shareObj.pics[0],  $scope.shareObj.sUrl);
+        window.plugins.socialsharing.share($scope.shareObj.content, $scope.shareObj.title, $scope.shareObj.pics[0], $scope.shareObj.sUrl);
     }
 
 
