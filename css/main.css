@@ -26,12 +26,16 @@
 #navigator .ui-block-b,
 #navigator .ui-block-c,
 #navigator .ui-block-d {
-    height:50%; text-align:center;
+    height:49%; text-align:center;
+    overflow: visible;
 }
 #navigator a { display:inline-block;  text-decoration:none;height: 80%; width: 100%}
 #navigator a img {max-width:97%; max-height:100%;}
 #navigator a h3 {font-size:90%; color:#64605D;height: 20%; text-align:center; white-space:nowrap;}
 
+.ui-grid-c>:nth-child(n){
+    margin-right: 0;
+}
 @media screen and (max-height:400px) {
 	#pagemain #mainContent{position: initial;top: initial;bottom: initial;left: initial;right: initial;}
     #mainContent{overflow-y:scroll;}
