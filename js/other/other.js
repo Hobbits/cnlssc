@@ -141,7 +141,7 @@ document.addEventListener("deviceready", function(){
 }, false);
 
 document.addEventListener("deviceready", function(){
-    setTimeout(function(){navigator.splashscreen.hide();},7000);
+    setTimeout(function(){navigator.splashscreen.hide();},3000);
 }, false);
 
 
