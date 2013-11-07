@@ -37,6 +37,7 @@ app.directive("appfooter", function($route) {
 //                    scope.navNames[navName]="ui-btn-active";
                 }
             });
+            $('#navigator').height('49.85%');
         }
     }
 });
